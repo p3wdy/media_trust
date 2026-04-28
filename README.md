@@ -1,3 +1,12 @@
+---
+title: MediaTrust
+emoji: 🛡️
+colorFrom: blue
+colorTo: purple
+sdk: docker
+pinned: false
+---
+
 # MediaTrust 🛡️
 
 **MediaTrust** is an AI-powered media forensics tool designed to detect deepfakes, face-swaps, and digital manipulations in sports photos and video clips. 
@@ -39,7 +48,7 @@ npm run dev
 1. Create a new **Space** on [Hugging Face](https://huggingface.co/new-space).
 2. Select **Docker** as the SDK.
 3. In the Space **Settings**, add your `GEMINI_API_KEY` as a **Secret**.
-4. Push this code to a GitHub repository and connect it to your Space.
+4. Push this code to the Space using `git push hf main`.
 
 ## ⚖️ License
 MIT
