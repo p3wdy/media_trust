@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# MediaTrust 🛡️
 
-## Getting Started
+**MediaTrust** is an AI-powered media forensics tool designed to detect deepfakes, face-swaps, and digital manipulations in sports photos and video clips. 
 
-First, run the development server:
+Built for the hackathon, it uses **Google Gemini 1.5 Flash** (via Google AI Studio) to perform multi-modal analysis and provide a detailed credibility score with a forensic explanation.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Features
+- **Instant Analysis:** Drag and drop images or video clips for immediate scanning.
+- **AI Forensics:** Detects face-swapping boundaries, biometric inconsistencies, and temporal flickering.
+- **Credibility Scoring:** Provides a 0-100 score with a color-coded UI (Green/Yellow/Red).
+- **Video Support:** Natively processes video files using the Gemini File API.
+- **Vercel Optimized:** Ready for deployment with configured serverless timeouts.
+
+## 🛠️ Tech Stack
+- **Framework:** [Next.js 14+](https://nextjs.org/) (App Router)
+- **AI Engine:** [Google Gemini API](https://aistudio.google.com/)
+- **Styling:** Pure CSS (Vanilla) for a premium, lightweight design.
+- **Deployment:** [Vercel](https://vercel.com/)
+
+## 🏁 Getting Started
+
+### 1. Prerequisites
+- A Google account to get a free API key from [Google AI Studio](https://aistudio.google.com/).
+
+### 2. Environment Setup
+Create a `.env.local` file in the root directory:
+```env
+GEMINI_API_KEY=your_api_key_here
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 3. Installation
+```bash
+npm install
+npm run dev
+```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🌍 Deployment
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Deploy to Vercel
+1. Push this code to a GitHub repository.
+2. Connect your repo to Vercel.
+3. Add your `GEMINI_API_KEY` to the Vercel **Environment Variables** settings.
+4. Deploy!
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## ⚖️ License
+MIT
