@@ -1,6 +1,4 @@
 import { NextResponse } from 'next/server';
-
-export const maxDuration = 10; // Maximum duration for Vercel Hobby tier
 import { GoogleGenerativeAI } from '@google/generative-ai';
 import { GoogleAIFileManager } from '@google/generative-ai/server';
 import fs from 'fs/promises';

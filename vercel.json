@@ -1,9 +1,0 @@
-{
-  "version": 2,
-  "framework": "nextjs",
-  "functions": {
-    "src/app/api/analyze/route.js": {
-      "maxDuration": 10
-    }
-  }
-}
